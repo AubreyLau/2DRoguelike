@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &133658
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 433658}
+  - component: {fileID: 11433656}
+  - component: {fileID: 11433658}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &433658
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133658}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &11433656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7903895b6dc466bbf4c5f2027305d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelStartDelay: 1
+  turnDelay: 0.1
+  playerHP: 100
+  maxHP: 100
+  Money: 0
+  weaponType: 0
+  level: 1
+  playersTurn: 1
+  healthBar: {fileID: 9222443316486509387, guid: 7ddf41c17927f498bbd700475bc43c9e,
+    type: 3}
+  levelBar: {fileID: 7448264754164472937, guid: c345586cb64794552bf0898be031c698,
+    type: 3}
+  damageBar: {fileID: 0}
+  healthbar: {fileID: 0}
+--- !u!114 &11433658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 133658}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6ad3623badcb4fef96b37d1aa2b7ff7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallCount:
+    minimum: 15
+    maximum: 20
+  foodCount:
+    minimum: 1
+    maximum: 5
+  exit: {fileID: 110520, guid: 3385945b3319841eeaec60e0c9df0712, type: 3}
+  floorTiles:
+  - {fileID: 106160, guid: e6a26dd35716c49d79c075de19554b99, type: 3}
+  - {fileID: 137908, guid: 93e18391c9c4d4f8a8b38fea765661f8, type: 3}
+  - {fileID: 125636, guid: 6ab3794fc5fef4a57b3100545e06ab1c, type: 3}
+  - {fileID: 177044, guid: 6b0e10e4e4d28481993a78b46be281e7, type: 3}
+  - {fileID: 109612, guid: be1b8cae628c249cf9a3496925b3f33f, type: 3}
+  - {fileID: 127736, guid: f3652b5d8814a4271adf60aeea1c5695, type: 3}
+  - {fileID: 110520, guid: 2eaae30c632784d2a8993d11f7df7ab1, type: 3}
+  - {fileID: 110520, guid: edc65ef1392ff4e32a925a4a4809ca9d, type: 3}
+  wallTiles:
+  - {fileID: 110520, guid: 365ab490194384cdf8026e629b3b3cbf, type: 3}
+  - {fileID: 110520, guid: 377e5f7b3b0ea47eba08a677c4179b35, type: 3}
+  - {fileID: 110520, guid: 18f7108caab204db1a5a432ebfec1adb, type: 3}
+  - {fileID: 110520, guid: 82b7af3fd11ca4073b450cc35b25ec5a, type: 3}
+  - {fileID: 110520, guid: cc63e27b79c33457bbc2e4414e17f8d4, type: 3}
+  - {fileID: 110520, guid: eab55abe5ffa24ca1b47b09775613e7b, type: 3}
+  - {fileID: 110520, guid: 2f0706e6e91e247498c4c8061bdf7ea4, type: 3}
+  - {fileID: 110520, guid: 3f39aa853860c4526b7f1a11226bfbbe, type: 3}
+  foodTiles:
+  - {fileID: 110520, guid: 8dd2f01c69e2148b3805764ab3fc938f, type: 3}
+  - {fileID: 110520, guid: 0a5de511b5d1a499d93887eb8863574d, type: 3}
+  enemyTiles:
+  - {fileID: 195068, guid: f80c689a41a38b54fbc456b811f9ad14, type: 3}
+  - {fileID: 161064, guid: 2a62e28827f862045bb143409502999e, type: 3}
+  - {fileID: 4220490568122356776, guid: 24dfa6b49b67aa146a0795fd8f1a6552, type: 3}
+  - {fileID: 4415947202625103102, guid: f3e15422b84138d4da539d6a69857fa9, type: 3}
+  enemyShopTiles:
+  - {fileID: 125072626783667822, guid: db759b76e4c923c47868b52b91a3ead3, type: 3}
+  outerWallTiles:
+  - {fileID: 110520, guid: 110de54e4d93e4fdca484a71fbf3e108, type: 3}
+  - {fileID: 110520, guid: 563a8e5122ee24938b72718795011ca9, type: 3}
+  - {fileID: 110520, guid: b293dd240402b404cae1ce890c44cf9e, type: 3}
+  Boss:
+  - {fileID: 364823821514519390, guid: 937286070a1af95489b75bf360481182, type: 3}
+  - {fileID: 834008738992009718, guid: df985bd53ed1ee944a0e17cd81ad510e, type: 3}
+  - {fileID: 2157175024406076570, guid: faa9394fa169d9c4b8c11f2e9969595c, type: 3}
+  finalBoss:
+  - {fileID: 6028307202169859246, guid: 14cc0fb5f3c41974485228f71f7706d5, type: 3}
+  weapon1:
+  - {fileID: 2049345643964051947, guid: 254f56287e5284f73ac7016828dd50af, type: 3}
+  - {fileID: 7148831635739400593, guid: 19bdcab2478fe472abf92e59e2b8b6bc, type: 3}
+  weapon2:
+  - {fileID: 5305839624968968949, guid: e2d852f65a6cb4721935031d15994b73, type: 3}
+  - {fileID: 6773576059247431935, guid: b26c9d0aa7f1541bb9566c6027a0e1f2, type: 3}
+  weapon3:
+  - {fileID: 8602243845126656199, guid: c3444ec5c60134321ac6c009cadae208, type: 3}
+  - {fileID: 6803727907975522825, guid: 52ce8d0f66f884a36a5d9ee502164407, type: 3}
+  weapon4:
+  - {fileID: 5803276900246051240, guid: 0b2f581235c664603bb0bc9014f455eb, type: 3}
+  - {fileID: 2449656163763566331, guid: 9e740711f65034fe0838fd18cd29ec3f, type: 3}
+  shop:
+  - {fileID: 6971179090343191124, guid: 1e04584be8f454f68958e59a69a9afbd, type: 3}
+  weapon:
+  - {fileID: 2049345643964051947, guid: 254f56287e5284f73ac7016828dd50af, type: 3}
+  - {fileID: 7148831635739400593, guid: 19bdcab2478fe472abf92e59e2b8b6bc, type: 3}
+  - {fileID: 5305839624968968949, guid: e2d852f65a6cb4721935031d15994b73, type: 3}
+  - {fileID: 6773576059247431935, guid: b26c9d0aa7f1541bb9566c6027a0e1f2, type: 3}
+  - {fileID: 6803727907975522825, guid: 52ce8d0f66f884a36a5d9ee502164407, type: 3}
+  - {fileID: 8602243845126656199, guid: c3444ec5c60134321ac6c009cadae208, type: 3}
+  - {fileID: 2449656163763566331, guid: 9e740711f65034fe0838fd18cd29ec3f, type: 3}
+  - {fileID: 5803276900246051240, guid: 0b2f581235c664603bb0bc9014f455eb, type: 3}
+  boardHolder: {fileID: 0}
+  right: {fileID: 0}
+  left: {fileID: 0}
+  up: {fileID: 0}
+  down: {fileID: 0}
+  currentPos: {x: 0, y: 0}
+  Dir: {x: 0, y: 0}
